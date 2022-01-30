@@ -1,6 +1,21 @@
 body{
-  background: gainsboro;
+  /* background: gainsboro; */
+  background-color: #a66ff9;
+
+  animation-name: bg;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
+@keyframes bg {
+  0%{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%234ad893' fill-opacity='0.7'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");}
+  50%{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='0' height='0' viewBox='0 0 48 48'%3E%3Cg fill='%234ad893' fill-opacity='0.1'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");}
+  100%{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%234ad893' fill-opacity='0.7'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");}
+}
+.columns{
+  display: grid;
+  grid-template: 150px / 33% 33% 33%;
+}
+
 .triangle-stretch {
   width: 0;
   height: 0;
@@ -12,15 +27,15 @@ body{
   animation-iteration-count: infinite;
 }
 @keyframes bounce {
-  0%{border-bottom: 100px solid blue;}
-  50%{border-bottom: 200px solid red;}
-  100%{border-bottom: 100px solid blue;}
+  0%{border-bottom: 100px solid darkmagenta;}
+  50%{border-bottom: 200px solid mediumorchid;}
+  100%{border-bottom: 100px solid darkmagenta;}
 }
 
 .circle-fun{
   width: 100px;
   height: 100px;
-  background-color: red;
+  background-color: plum;
   border-radius: 50%;
   animation-name: wuw;
   animation-duration: 3s;
@@ -28,6 +43,21 @@ body{
 }
 @keyframes wuw {
   0%{width: 100px; height: 400px;}
-  50%{width: 400px; height: 100px;}
+  50%{width: 400px; height: 100px;background: mediumaquamarine;}
   100%{width: 100px; height: 400px;}
+}
+
+.parallel-wobble{
+  width: 150px;
+  height: 300px;
+  background: red;
+  animation-name: wob;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes wob {
+  0%{transform: skew(0deg); background: olive}
+  33%{transform: skew(-60deg); background: springgreen}
+  66%{transform: skew(60deg); background: teal}
+  100%{transform: skew(0deg); background: olive}
 }

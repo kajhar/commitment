@@ -58,6 +58,7 @@ body{
   width: 100px;
   height: 100px;
   background-color: plum;
+  color: cornflowerblue;
   border-radius: 50%;
   animation-name: wuw;
   animation-duration: 3.4s;
@@ -65,7 +66,7 @@ body{
 }
 @keyframes wuw {
   0%{width: 100px; height: 300px;}
-  50%{width: 400px; height: 100px;background: mediumaquamarine;}
+  50%{width: 400px; height: 130px;background: mediumaquamarine;}
   100%{width: 100px; height: 300px;}
 }
 

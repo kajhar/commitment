@@ -21,15 +21,17 @@ body{
   width: 100%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
   top: 0;left: 0;right: 0;bottom: 0;
-  background-color: rgba(0,80,40,1); /* Black background with opacity */
+  background-image: radial-gradient(violet, mediumspringgreen, deepskyblue);
+  opacity: 100%
+  background-color: rgba(0,0,0,1); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   /* cursor: help; /* Add a pointer on hover */
   animation-name: fade;
-  animation-duration: 10s;
+  animation-duration: 80s;
 }
 @keyframes fade {
-  0%{background-color: rgba(0,0,0,0);}
-  100%{background-color: rgba(0,80,40,1);}
+  0%{opacity: 0%}
+  100%{opacity: 100%}
 
 }
 

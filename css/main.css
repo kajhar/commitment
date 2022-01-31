@@ -23,7 +23,7 @@ body{
   border-right: 90px solid transparent;
   border-bottom: 100px solid red;
   animation-name: bounce;
-  animation-duration: 2s;
+  animation-duration: 2.6s;
   animation-iteration-count: infinite;
 }
 @keyframes bounce {
@@ -38,13 +38,13 @@ body{
   background-color: plum;
   border-radius: 50%;
   animation-name: wuw;
-  animation-duration: 3s;
+  animation-duration: 3.4s;
   animation-iteration-count: infinite;
 }
 @keyframes wuw {
-  0%{width: 100px; height: 400px;}
+  0%{width: 100px; height: 300px;}
   50%{width: 400px; height: 100px;background: mediumaquamarine;}
-  100%{width: 100px; height: 400px;}
+  100%{width: 100px; height: 300px;}
 }
 
 .parallel-wobble{
@@ -52,7 +52,7 @@ body{
   height: 300px;
   background: red;
   animation-name: wob;
-  animation-duration: 3s;
+  animation-duration: 3.3s;
   animation-iteration-count: infinite;
 }
 @keyframes wob {
@@ -69,11 +69,25 @@ body{
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   background-color: thistle;
   animation-name: letssee;
-  animation-duration: 4s;
+  animation-duration: 4.2s;
   animation-iteration-count: infinite;
 }
 @keyframes letssee {
   0%{transform: rotate(0deg);}
   50%{transform: rotate(360deg); background-color: rebeccapurple;}
   100%{transform: rotate(0deg);}
+}
+
+.thingy{
+  height: 150px;
+  width: 150px;
+  background-color: purple;
+  animation-name: boring;
+  animation-duration: 1.1s;
+  animation-iteration-count: infinite;
+}
+@keyframes boring {
+  0%{background-color: darkmagenta;}
+  50%{height: 200px; width: 200px;}
+  100%{}
 }

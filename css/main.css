@@ -93,16 +93,17 @@ body{
 }
 
 .whatsit{
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  box-shadow: 15px 15px 0 0 midnightblue;
+  box-shadow: 35px 35px 0 0 midnightblue;
+  margin-top: 40px;
   animation-name: waxwane;
-  animation-duration: 7.6s;
+  animation-duration: 4.6s;
   animation-iteration-count: infinite;
 }
 @keyframes waxwane {
   0%{}
-  50%{box-shadow: 40px 40px 0 0 cadetblue;}
+  50%{box-shadow: 70px 70px 20px -10px cadetblue;}
   100%{}
 }

@@ -15,7 +15,7 @@ body{
 }
 .columns{
   display: grid;
-  grid-template: 320px / 33% 33% 33%;
+  grid-template: 300px / 33% 33% 33%;
 }
 #overlay {
   position: fixed; /*Sit on top of the page content */
@@ -131,7 +131,7 @@ body{
 }
 
 .dodad{
-  height: 200px;
+  height: 250px;
   width: 200px;
   background-color: honeydew;
   animation: zippy;

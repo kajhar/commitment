@@ -13,7 +13,7 @@ body{
 }
 .columns{
   display: grid;
-  grid-template: 150px / 33% 33% 33%;
+  grid-template: 300px / 33% 33% 33%;
 }
 
 .triangle-stretch {
@@ -60,4 +60,20 @@ body{
   33%{transform: skew(-60deg); background: springgreen}
   66%{transform: skew(60deg); background: teal}
   100%{transform: skew(0deg); background: olive}
+}
+
+.idunno{
+  display: block;
+  height: 230px;
+  width: 100px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background-color: thistle;
+  animation-name: letssee;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes letssee {
+  0%{transform: rotate(0deg);}
+  50%{transform: rotate(360deg); background-color: rebeccapurple;}
+  100%{transform: rotate(0deg);}
 }

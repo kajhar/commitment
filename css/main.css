@@ -1,7 +1,9 @@
 body{
   /* background: gainsboro; */
   background-color: #a66ff9;
-
+  color: darkkhaki;
+  font-family: cursive;
+  text-align: center;
   animation-name: bg;
   animation-duration: 2s;
   animation-iteration-count: infinite;
